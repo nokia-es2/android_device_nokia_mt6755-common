@@ -52,5 +52,10 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_USES_METADATA_PARTITION := true
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Platform
+BOARD_HAS_MTK_HARDWARE := true
+MTK_HARDWARE := true
+TARGET_BOARD_PLATFORM := mt6755
+
 # Inherit the proprietary files
 include vendor/nokia/mt6755-common/BoardConfigVendor.mk
